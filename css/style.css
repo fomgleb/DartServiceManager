@@ -459,7 +459,6 @@ body {
   min-height: 100vh;
   background: url("../img/intro/bg.jpg") center no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
