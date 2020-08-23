@@ -1,0 +1,18 @@
+.logo {
+  display: flex;
+  cursor: pointer;
+
+  &__name {
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 15px;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-left: 10px;
+  
+    & span {
+      font-weight: 400;
+    }
+  }
+}
+

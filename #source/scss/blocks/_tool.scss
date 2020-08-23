@@ -1,0 +1,86 @@
+.tool {
+  &__content {
+    margin-top: 95px;
+
+    @media (max-width:454px) {
+      margin-top: 60px;
+    }
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -100px;
+    align-items: flex-start;
+
+    @media (max-width:1337px) {
+      margin: 0 -50px;
+    }
+
+    @media (max-width:1148px) {
+      margin: 0 -25px;
+    }
+
+    @media (max-width:1067px) {
+      flex-direction: column;
+      margin: 0;
+    }
+  }
+
+  &__item {
+    margin: 0 100px;
+    text-align: center;
+    width: 33.3333333%;
+
+    @media (max-width:1337px) {
+      margin: 0 50px;
+    }
+
+    @media (max-width:1148px) {
+      margin: 0 25px;
+    }
+
+    @media (max-width:1067px) {
+      margin: 0 auto 50px;
+      max-width: 500px;
+      width: 100%;
+    }
+  }
+
+  &__icon {
+    margin-bottom: 45px;
+    min-height: 80px;
+  }
+
+  &__title {
+    color: #061e37;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  &__description {
+    margin-top: 17px;
+    /* Style for "Lorem ipsu" */
+    color: #78909c;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  &__footer {
+    margin-top: 78px;
+    text-align: center;
+
+    @media (max-width:1067px) {
+      margin-top: 40px;
+    }
+
+    @media (max-width:454px) {
+      margin-top: 20px;
+    }
+  }
+
+  &__button {
+    background-color: #1de9b6;
+    color: #ffffff;
+  }
+}

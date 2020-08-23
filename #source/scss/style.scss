@@ -1,0 +1,56 @@
+// Импорт шрифтов
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&display=swap');
+
+// Шрифт по умолчанию
+$fontfamily: 'Raleway', sans-serif;
+
+// Переменные 
+$minwidth: 320px;
+
+// Обнуление
+@import "reset";
+
+// Оболочка
+.wrapper {
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+// Основная сетка
+.container {
+  max-width: 1470px;
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+
+  &.lock {
+    @media (max-width:767px) {
+      overflow: hidden;
+    }
+  }
+}
+
+// Подключение файлов, стилей, страниц и элементов
+@import "blocks/button";
+@import "blocks/section";
+@import "blocks/logo";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/intro";
+@import "blocks/tool";
+@import "blocks/progress";
+@import "blocks/services";
+@import "blocks/spoiler";
+@import "blocks/slider";
+@import "blocks/reviews";
+@import "blocks/review";
+@import "blocks/team";
+@import "blocks/contacts";
+@import "blocks/footer";
+@import "blocks/social";

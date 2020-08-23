@@ -1,0 +1,37 @@
+.nav {
+  display: flex;
+
+  &__link {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 50px;
+    transition: color 0.3s ease;
+
+    &.active {
+      color: #061e37;
+    }
+
+    &:hover {
+      color: #061e37;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &--footer {
+    & .nav__link {
+      &:hover {
+        color: #384B5F;
+      }
+    }
+
+    @media (max-width:542px) {
+      flex-wrap: wrap;
+      line-height: 40px;
+      justify-content: center;
+    }
+  }
+}

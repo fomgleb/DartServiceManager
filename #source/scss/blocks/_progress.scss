@@ -1,0 +1,53 @@
+.progress {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    width: 25%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width:1151px) {
+      width: 50%;
+    }
+
+    @media (max-width:646px) {
+      width: 100%;
+    }
+
+    &-inner {
+      display: flex;
+      margin: 0 auto;
+      width: 200px;
+    }
+
+    &--business {
+      background-color: #80d8ff;
+    }
+
+    &--downloads {
+      background-color: #82b1ff;
+    }
+
+    &--free-installs {
+      background-color: #b388ff;
+    }
+
+    &--pro-users {
+      background-color: #ea80fc;
+    }
+  }
+
+  &__icon {
+    margin-right: 23px;
+  }
+
+  &__title {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+  }
+}

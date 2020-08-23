@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#000000">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Dart Service Manager</title>
+</head>
+
+<body>
+  <!-- Sprite -->
+  <svg style="display: none;">
+    <symbol id="play-button" viewBox="0 0 320.001 320.001">
+      <path d="M295.84,146.049l-256-144c-4.96-2.784-11.008-2.72-15.904,0.128C19.008,5.057,16,10.305,16,16.001v288
+	c0,5.696,3.008,10.944,7.936,13.824c2.496,1.44,5.28,2.176,8.064,2.176c2.688,0,5.408-0.672,7.84-2.048l256-144
+	c5.024-2.848,8.16-8.16,8.16-13.952S300.864,148.897,295.84,146.049z" />
+    </symbol>
+  </svg>
+
+  <div class="wrapper">
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header__body">
+          <div class="header__logo">
+            <div class="logo" data-scroll="#intro">
+              <img src="img/header/logo.svg" alt="">
+              <div class="logo__name"><span>Dart</span><br>service manager</div>
+            </div>
+          </div>
+
+          <div class="header__menu">
+            <nav class="nav">
+              <a href="#" class="nav__link" data-scroll="#intro">Home</a>
+              <a href="#" class="nav__link" data-scroll="#tool">Tool</a>
+              <a href="#" class="nav__link" data-scroll="#services">Services</a>
+              <a href="#" class="nav__link" data-scroll="#reviews">Reviews</a>
+              <a href="#" class="nav__link" data-scroll="#team">Team</a>
+            </nav>
+          </div>
+
+          <div class="header__button">
+            <a href="#" class="button button--header">sing up</a>
+          </div>
+
+          <div class="header__burger">
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="content">
+      <div class="intro" id="intro">
+        <div class="container">
+          <div class="intro__body">
+            <div class="intro__content">
+              <div class="intro__title">lorem Ipsum Dolor sit amet</div>
+              <div class="intro__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamc
+              </div>
+              <div class="intro__buttons">
+                <a href="#" class="button">Buy now</a>
+                <a href="#" class="button">Try for free</a>
+              </div>
+            </div>
+
+            <div class="intro__video">
+              <video poster="img/intro/video-preview.jpg">
+                <source src="video/jojo-op.mp4" type="video/mp4">
+                <source src="video/jojo-op.webm" type="video/webm">
+                Тег video не поддерживается вашим браузером.
+                <a href="video/jojo-op.mp4">Скачайте видео</a>.
+              </video>
+              <a href="#" class="intro__video-link">
+                <div class="intro__video-button">
+                  <svg>
+                    <use xlink:href="#play-button"></use>
+                  </svg>
+                </div>
+                <div class="intro__video-text">Watch the video</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="section tool" id="tool">
+        <div class="container">
+          <div class="section__title">Easy & Useful</div>
+          <div class="section__subtitle">Project Management Tool</div>
+          <div class="section__description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          </div>
+
+          <div class="tool__content">
+            <div class="tool__body">
+              <div class="tool__item">
+                <div class="tool__icon">
+                  <img src="img/tool/01.png" alt="">
+                </div>
+                <div class="tool__title">Title Goes Here</div>
+                <div class="tool__description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et
+                  dolore magna aliqua.
+                </div>
+              </div>
+
+              <div class="tool__item">
+                <div class="tool__icon">
+                  <img src="img/tool/02.png" alt="">
+                </div>
+                <div class="tool__title">Title Goes Here</div>
+                <div class="tool__description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et
+                  dolore magna aliqua.
+                </div>
+              </div>
+
+              <div class="tool__item">
+                <div class="tool__icon">
+                  <img src="img/tool/03.png" alt="">
+                </div>
+                <div class="tool__title">Title Goes Here</div>
+                <div class="tool__description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et
+                  dolore magna aliqua.
+                </div>
+              </div>
+            </div>
+
+            <div class="tool__footer">
+              <a href="#" class="button tool__button">Get started</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="progress" id="progress">
+        <div class="progress__item progress__item--business">
+          <div class="progress__item-inner">
+            <div class="progress__icon">
+              <img src="img/progress/01.png" alt="">
+            </div>
+            <div class="progress__title">12000+<br>Business</div>
+          </div>
+        </div>
+
+        <div class="progress__item progress__item--downloads">
+          <div class="progress__item-inner">
+            <div class="progress__icon">
+              <img src="img/progress/02.png" alt="">
+            </div>
+            <div class="progress__title">60000+<br>Downloads</div>
+          </div>
+        </div>
+
+        <div class="progress__item progress__item--free-installs">
+          <div class="progress__item-inner">
+            <div class="progress__icon">
+              <img src="img/progress/03.png " alt="">
+            </div>
+            <div class="progress__title">30000+<br>Free Installs</div>
+          </div>
+        </div>
+
+        <div class="progress__item progress__item--pro-users">
+          <div class="progress__item-inner">
+            <div class="progress__icon">
+              <img src="img/progress/04.png" alt="">
+            </div>
+            <div class="progress__title">40000+<br>Pro Users</div>
+          </div>
+        </div>
+      </div>
+
+      <section class="section services" id="services">
+        <div class="container">
+          <div class="section__title">Services</div>
+          <div class="section__description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna
+          </div>
+
+          <div class="services__content one">
+            <div class="spoiler">
+              <div class="spoiler__header">
+                <div class="spoiler__icon">
+                  <img src="img/services/trending_up.png" alt="">
+                </div>
+                <div class="spoiler__title">Statistics</div>
+                <div class="spoiler__drop-down">
+                  <img src="img/services/drop-down-arrow.svg" alt="">
+                </div>
+              </div>
+
+              <div class="spoiler__body">
+                <div class="spoiler__img">
+                  <img src="img/services/image-01.jpg" alt="">
+                </div>
+                <div class="spoiler__text">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  </p>
+                  <p>
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                    dolor in reprehenderit in
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="spoiler">
+              <div class="spoiler__header">
+                <div class="spoiler__icon">
+                  <img src="img/services/mail.png" alt="">
+                </div>
+                <div class="spoiler__title">inbox</div>
+                <div class="spoiler__drop-down">
+                  <img src="img/services/drop-down-arrow.svg" alt="">
+                </div>
+              </div>
+
+              <div class="spoiler__body">
+                <div class="spoiler__img">
+                  <img src="img/services/image-01.jpg" alt="">
+                </div>
+                <div class="spoiler__text">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  </p>
+                  <p>
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                    dolor in reprehenderit in
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="spoiler">
+              <div class="spoiler__header">
+                <div class="spoiler__icon">
+                  <img src="img/services/group.png" alt="">
+                </div>
+                <div class="spoiler__title">Team</div>
+                <div class="spoiler__drop-down">
+                  <img src="img/services/drop-down-arrow.svg" alt="">
+                </div>
+              </div>
+
+              <div class="spoiler__body">
+                <div class="spoiler__img">
+                  <img src="img/services/image-01.jpg" alt="">
+                </div>
+                <div class="spoiler__text">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  </p>
+                  <p>
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                    dolor in reprehenderit in
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="spoiler">
+              <div class="spoiler__header">
+                <div class="spoiler__icon">
+                  <img src="img/services/settings.png" alt="">
+                </div>
+                <div class="spoiler__title">Settings</div>
+                <div class="spoiler__drop-down">
+                  <img src="img/services/drop-down-arrow.svg" alt="">
+                </div>
+              </div>
+
+              <div class="spoiler__body">
+                <div class="spoiler__img">
+                  <img src="img/services/image-01.jpg" alt="">
+                </div>
+                <div class="spoiler__text">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  </p>
+                  <p>
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                    dolor in reprehenderit in
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="spoiler">
+              <div class="spoiler__header">
+                <div class="spoiler__icon">
+                  <img src="img/services/rss_feed.png" alt="">
+                </div>
+                <div class="spoiler__title">Feed</div>
+                <div class="spoiler__drop-down">
+                  <img src="img/services/drop-down-arrow.svg" alt="">
+                </div>
+              </div>
+
+              <div class="spoiler__body">
+                <div class="spoiler__img">
+                  <img src="img/services/image-01.jpg" alt="">
+                </div>
+                <div class="spoiler__text">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  </p>
+                  <p>
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                    dolor in reprehenderit in
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="reviews" id="reviews">
+        <div class="container">
+          <div class="reviews__body">
+            <div class="reviews__left">
+              <div class="reviews__title">What our customers have to say about us.</div>
+              <div class="reviews__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna
+              </div>
+              <div class="reviews__button">
+                <a href="#" class="button">Get started</a>
+              </div>
+            </div>
+
+            <div class="reviews__right">
+              <div class="reviews__slider">
+                <div class="review">
+                  <div class="review__image">
+                    <img src="img/reviews/01.png" alt="">
+                  </div>
+                  <div class="review__content">
+                    <div class="review__name">John Doe</div>
+                    <div class="review__text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                      labore
+                      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                      aliquip ex ea
+                    </div>
+                  </div>
+                </div>
+
+                <div class="review">
+                  <div class="review__image">
+                    <img src="img/reviews/02.png" alt="">
+                  </div>
+                  <div class="review__content">
+                    <div class="review__name">Khalessi</div>
+                    <div class="review__text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                      labore
+                      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                      aliquip ex ea
+                    </div>
+                  </div>
+                </div>
+
+                <div class="review">
+                  <div class="review__image">
+                    <img src="img/reviews/02.png" alt="">
+                  </div>
+                  <div class="review__content">
+                    <div class="review__name">Khalessi</div>
+                    <div class="review__text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                      labore
+                      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                      aliquip ex ea
+                    </div>
+                  </div>
+                </div>
+
+                <div class="review">
+                  <div class="review__image">
+                    <img src="img/reviews/02.png" alt="">
+                  </div>
+                  <div class="review__content">
+                    <div class="review__name">Khalessi</div>
+                    <div class="review__text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                      labore
+                      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                      aliquip ex ea
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews__arrows"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="section team" id="team">
+        <div class="container">
+          <div class="section__title">Our Team</div>
+          <div class="section__description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna
+          </div>
+
+          <div class="team__content">
+            <div class="photo__slider">
+              <div class="photo__slider-item">
+                <img src="img/team/01.png" alt="">
+              </div>
+              <div class="photo__slider-item">
+                <img src="img/team/02.png" alt="">
+              </div>
+              <div class="photo__slider-item">
+                <img src="img/team/03.png" alt="">
+              </div>
+              <div class="photo__slider-item">
+                <img src="img/team/04.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="information__slider">
+              <div class="information__slider-item">
+                <div class="information__slider-name">Sophie Turner</div>
+                <div class="information__slider-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magnaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                  incididunt
+                </div>
+                <div class="social">
+                  <a class="social__link" href="#">
+                    <img src="img/team/social/01.png" alt="">
+                  </a>
+                  <a class="social__link" href="#">
+                    <img src="img/team/social/02.png" alt="">
+                  </a>
+                  <a class="social__link" href="#">
+                    <img src="img/team/social/03.png" alt="">
+                  </a>
+                  <a class="social__link" href="#">
+                    <img src="img/team/social/04.png" alt="">
+                  </a>
+                  <a class="social__link" href="#">
+                    <img src="img/team/social/05.png" alt="">
+                  </a>
+                </div>
+              </div>
+
+              <div class="information__slider-item">
+                <div class="information__slider-name">Anonim Anonimus</div>
+                <div class="information__slider-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magnaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                  incididunt
+                </div>
+                <div class="social">
+                  <a class="social__link" href="#">
+                    <img src="img/team/social/01.png" alt="">
+                  </a>
+                  <a class="social__link" href="#">
+                    <img src="img/team/social/02.png" alt="">
+                  </a>
+                  <a class="social__link" href="#">
+                    <img src="img/team/social/03.png" alt="">
+                  </a>
+                  <a class="social__link" href="#">
+                    <img src="img/team/social/04.png" alt="">
+                  </a>
+                  <a class="social__link" href="#">
+                    <img src="img/team/social/05.png" alt="">
+                  </a>
+                </div>
+              </div>
+
+              <div class="information__slider-item">
+                <div class="information__slider-name">Ne pomnu svoego imeni</div>
+                <div class="information__slider-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magnaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                  incididunt
+                </div>
+                <div class="social">
+                  <a class="social__link" href="#">
+                    <img src="img/team/social/01.png" alt="">
+                  </a>
+                  <a class="social__link" href="#">
+                    <img src="img/team/social/02.png" alt="">
+                  </a>
+                  <a class="social__link" href="#">
+                    <img src="img/team/social/03.png" alt="">
+                  </a>
+                  <a class="social__link" href="#">
+                    <img src="img/team/social/04.png" alt="">
+                  </a>
+                  <a class="social__link" href="#">
+                    <img src="img/team/social/05.png" alt="">
+                  </a>
+                </div>
+              </div>
+
+              <div class="information__slider-item">
+                <div class="information__slider-name">Dio Brando</div>
+                <div class="information__slider-text">
+                  I like zucchini
+                </div>
+                <div class="social">
+                  <a class="social__link" href="#">
+                    <img src="img/team/social/01.png" alt="">
+                  </a>
+                  <a class="social__link" href="#">
+                    <img src="img/team/social/02.png" alt="">
+                  </a>
+                  <a class="social__link" href="#">
+                    <img src="img/team/social/03.png" alt="">
+                  </a>
+                  <a class="social__link" href="#">
+                    <img src="img/team/social/04.png" alt="">
+                  </a>
+                  <a class="social__link" href="#">
+                    <img src="img/team/social/05.png" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contacts" id="contacts">
+        <div class="container">
+          <div class="section__title">Contact Us</div>
+          <div class="section__description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna
+          </div>
+          <div class="contacts__content">
+            <form action="#" method="POST" enctype="multipart/form-data" class="form">
+              <div class="form__name">
+                <input name="first-name" type="text" placeholder="First Name" class="form__item">
+                <input name="last-name" type="text" placeholder="Last Name" class="form__item">
+              </div>
+              <div class="form__social">
+                <input name="email" type="email" placeholder="Email" class="form__item">
+                <input name="phone" type="tel" placeholder="Phone" class="form__item">
+              </div>
+              <textarea name="message" type="text" placeholder="Message" class="form__message form__item"></textarea>
+              <div class="form__controls">
+                <div><input name="checkbox" type="checkbox" value="subscribe"
+                    class="form__controls-checkbox"><span>subscribe to the
+                    newsletter</span></div>
+                <button type="submit" class="button">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__left">
+            <div class="logo" data-scroll="#intro">
+              <img src="img/header/logo.svg" alt="">
+              <div class="logo__name"><span>Dart</span><br>service manager</div>
+            </div>
+            <div class="detalis">
+              <a class="detalis__item"><span>Privecy Policy</span></a>
+              <a class="detalis__item"><span>About Us</span></a>
+              <a class="detalis__item"><span>About Us</span></a>
+            </div>
+          </div>
+          <div class="footer__right">
+            <div class="nav nav--footer">
+              <a href="#" class="nav__link" data-scroll="#intro">Home</a>
+              <a href="#" class="nav__link" data-scroll="#tool">Tool</a>
+              <a href="#" class="nav__link" data-scroll="#services">Services</a>
+              <a href="#" class="nav__link" data-scroll="#reviews">Reviews</a>
+              <a href="#" class="nav__link" data-scroll="#team">Team</a>
+            </div>
+            <div class="social">
+              <a class="social__link" href="#">
+                <img src="img/footer/social/01.png" alt="">
+              </a>
+              <a class="social__link" href="#">
+                <img src="img/footer/social/02.png" alt="">
+              </a>
+              <a class="social__link" href="#">
+                <img src="img/footer/social/03.png" alt="">
+              </a>
+              <a class="social__link" href="#">
+                <img src="img/footer/social/04.png" alt="">
+              </a>
+              <a class="social__link" href="#">
+                <img src="img/footer/social/05.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Slick Slider -->
+  <script src="js/slick.min.js"></script>
+
+  <!-- Js -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>

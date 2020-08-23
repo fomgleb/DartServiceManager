@@ -1,0 +1,134 @@
+.team {
+  &__content {
+    text-align: center;
+    margin-top: 80px;
+
+    @media (max-width:473px) {
+      margin-top: 35px;
+    }
+  }
+
+  z-index: 1;
+}
+
+.photo {
+  display: flex;
+  justify-content: space-between;
+
+  &__slider {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto 35px;
+    position: relative;
+
+    @media (max-width:473px) {
+      margin-bottom: 10px;
+    }
+
+    .slick-track {
+      align-items: center;
+    }
+
+    .slick-arrow {
+      font-size: 0;
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 50%;
+      background: transparent;
+      z-index: 5;
+    }
+
+    .slick-prev {
+      left: 100px;
+
+      @media (max-width:751px) {
+        background: url("../img/team/arrow-left.svg") left center no-repeat;
+        background-size: 40px;
+        left: 0;
+      }
+    }
+
+    .slick-next {
+      right: 100px;
+      
+      @media (max-width:751px) {
+        background: url("../img/team/arrow-right.svg") right center no-repeat;
+        background-size: 40px;
+        right: 0;
+      }
+    }
+
+    .slick-disabled {
+      width: 0;
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 160px;
+
+      & img {
+        opacity: 0.2;
+        width: 100px;
+        height: 100px;
+        transition: all 0.3s ease;
+        border-radius: 50%;
+      }
+
+      &.slick {
+        &-current{
+          & img {
+            width: 160px;
+            height: 160px;
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    & .slick-list {
+      @media (max-width:342px) {
+          margin: 0 -15px;
+      }
+    }
+  }
+
+  
+}
+
+.information {
+  &__slider {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 645px;
+
+    & .slick-arrow {
+      font-size: 0;
+    }
+
+    &-name {
+      color: #061e37;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    &-text {
+      color: #90a4ae;
+      font-size: 15px;
+      line-height: 25px;
+      margin-top: 20px;
+
+      @media (max-width:473px) {
+        font-size: 14px;
+        line-height: 22px;
+      }
+      
+    }
+
+    
+  }
+}
